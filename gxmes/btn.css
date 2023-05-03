@@ -1,0 +1,22 @@
+.btn{
+    display: inline-block;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 1);
+}
+
+.btn:hover{
+    background-color: #4A554B;
+/*  opacity: 0.9; */
+}
+
+.btn-rounded{
+    border-radius: 5px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    const phrases = [
+      "Life is like a camera, focus on the good times, develop from the negatives, and if things don't work out, take another shot.",
+      "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+      "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+      "Don't watch the clock; do what it does. Keep going.",
+      "It does not matter how slowly you go as long as you do not stop.",
+      "The only way to do great work is to love what you do.",
+      "Don't let yesterday take up too much of today.",
+      "You miss 100% of the shots you don't take.",
+      "The only limit to our realization of tomorrow will be our doubts of today.",
+      "Believe you can and you're halfway there.",
+      "Success is not how high you have climbed, but how you make a positive difference to the world.",
+      "Start where you are. Use what you have. Do what you can.",
+      "Success is not the key to happiness. Happiness is the key to success.",
+      "You can never cross the ocean until you have the courage to lose sight of the shore.",
+      "Keep your face always toward the sunshine—and shadows will fall behind you.",
+      "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "Don't limit your challenges, challenge your limits.",
+      "Hardships often prepare ordinary people for an extraordinary destiny.",
+      "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.",
+      "Don't wait for opportunities, create them.",
+      "Successful people do what unsuccessful people are not willing to do.",
+      "Success is not how much money you make, it's about the difference you make in people's lives.",
+      "Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential."
+    ];
+
+    function getRandomPhrase() {
+      return phrases[Math.floor(Math.random() * phrases.length)];
+    }
+  </script>
+</head>
+<body>
+  <div id="phrase">
+    <script>
+      document.getElementById("phrase").innerHTML = getRandomPhrase();
+    </script>
+  </div>
+</body>
+</html>

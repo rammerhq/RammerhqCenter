@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Default Tab Title</title>
+  <link id="favicon" rel="icon" type="image/png" href="default-favicon.png">
+</head>
+<body>
+  <h2>Tab Title Input:</h2>
+  <input type="text" id="title-input">
+  <button id="title-button">Change Title</button>
+  <br><br>
+  <h2>Favicon Input:</h2>
+  <input type="text" id="favicon-input">
+  <button id="favicon-button">Change Favicon</button>
+  <script>
+    const titleInput = document.getElementById("title-input");
+    const titleButton = document.getElementById("title-button");
+    const faviconInput = document.getElementById("favicon-input");
+    const faviconButton = document.getElementById("favicon-button");
+    const favicon = document.getElementById("favicon");
+
+    titleButton.addEventListener("click", function() {
+      document.title = titleInput.value;
+      localStorage.setItem("tabTitle", titleInput.value);
+    });
+
+    faviconButton.addEventListener("click", function() {
+      favicon.href = faviconInput.value;
+      localStorage.setItem("faviconUrl", faviconInput.value);
+    });
+
+    window.addEventListener("load", function() {
+      if (localStorage.getItem("tabTitle")) {
+        document.title = localStorage.getItem("tabTitle");
+      }
+      if (localStorage.getItem("faviconUrl")) {
+        favicon.href = localStorage.getItem("faviconUrl");
+      }
+    });
+  </script>
+</body>
+</html>

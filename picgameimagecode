@@ -1,6 +1,6 @@
 <a href="">
             <img src="">
-            <div class="">
+            <div class="play button">
                 <i class="fa-solid fa-play"></i>
             </div>
           </a>

@@ -109,10 +109,65 @@ color: rgba(0, 255, 69, 1);
   color: green;
   opacity: 1;
 }
+       .featured .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured img {
+    height: 12.5vw;
+    width: 12.5vw;
+    border-radius: 1vw;
+    margin: .5vw;
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s;
+}
+
+.featured img:hover {
+    transform: scale(1.02);
+    filter: brightness(50%);
+}
+
+
+.featured .row img {
+    height: 26vw;
+    width: 26vw;
+}
+
+.featured a {
+    display: inline-block;
+    position: relative;
+    color: #2c7ffc;
+    text-decoration: none;
+}
+    
+    .featured .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    }
+    
+    .featured a:hover .play-button {
+    opacity: 1;
+    pointer-events: none;
+    }
+    
+    .featured .play-button i {
+    font-size: 5vw;
+    text-shadow: 0 0 100px #2c7ffc;
+    }
      </style>
      <img src="images/RammerCenter.png" alt="Logo" class="center" width="600" height="270">
   <h2>This is Part of the RammerHQ Google Site- Do not Pirate the games please and thank you</h2>
+     <div class="featured">
+       <div class="column">
      <a href="games/bitlife.html" class="btn btn-rounded center">Bitlife</a>
+        <img src="">
+         <i class="fa-solid fa-play"></i>
        <a href="games/Slope.html" class="btn btn-rounded center">Slope</a>
      <a href="games/basketballio.html" class="btn btn-rounded center">Basketball.io</a>
      <a href="games/flappybird.html" class="btn btn-rounded center">Flappy Bird</a>
@@ -157,6 +212,8 @@ color: rgba(0, 255, 69, 1);
      <a href="games/juriiidna.html" class="btn btn-rounded center">Jurassic Period III-The DNA Factor</a>
      <a href="games/juriiiIA.html" class="btn btn-rounded center">Jurassic Period III-Island Attacked</a>
      <a href="games/legoI.html" class="btn btn-rounded center">Lego Island 2</a>
+       </div>
+     </div>
      <footer>
       <h1>This Is Site is Created by RammerHQ</h1>
        <h2>Need Help?</h2>

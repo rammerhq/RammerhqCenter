@@ -77,6 +77,9 @@ border-radius: 10px;
        btn {
   text-align: center;
 }
+       img {
+  border-radius: 5px;
+}
      
      </style>
      <style>
@@ -106,134 +109,7 @@ color: rgba(0, 255, 69, 1);
   color: green;
   opacity: 1;
 }
-       nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(10px) saturate(200%) brightness(70%);
-    color: #fff;
-    display: flex;
-    height: 7vw;
-    width: 100%;
-    align-items: center;
-    justify-content: left;
-    padding: 0 1%;
-    z-index: 5;
-    margin: auto;
-}
-
-nav img {
-    height: 80%;
-    width: auto;
-    margin-right: 1%;
-    border-radius: 1vw;
-    cursor: pointer;
-    user-select: none;
-    box-shadow: 5px 5px 10px rgba(53, 53, 53, 0.459);
-}
-
-nav h1 {
-    font-size: 4vw;
-    font-weight: 800;
-    margin-right: 1%;
-}
-
-.content {
-    flex-direction: column;
-    align-items: left;
-    padding: 7vw;
-    padding-top: 0vw;
-}
-
-.content hr {
-    border: 0;
-    height: 4px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
-    margin: 1vw 0;
-}
-
-.search {
-    display: flex;
-    user-select: none;
-    margin-top: 2.5vw;
-    margin-left: 1.2vw;
-}
- 
-.search input {
-    background-color: #222222;
-    border: none;
-    border-radius: 1vw 0 0 1vw;
-    color: #fff;
-    font-size: 1.5vw;
-    font-weight: 600;
-    padding: 0.8vw 1.5vw;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 1;
-    outline: none;
-}
- 
-.search input::placeholder {
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.5vw;
-}
- 
-.search button {
-    background-color: #fff;
-    border: none;
-    border-radius: 0 1vw 1vw 0;
-    color:#222222;
-    font-size: 1.5vw;
-    font-weight: 600;
-    padding: 0.8vw 1vw;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 1;
-    transition: .3s all ease;
-}
- 
-#games {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: .6vw;
-    padding-bottom: 5vw;
-
-}
- 
-#games img {    height: 15.6vw;
-    width: 15.6vw;
-    border-radius: 1vw;
-    margin: .5vw;
-    cursor: pointer;
-    user-select: none;
-    transition: transform .2s;
-}
- 
-#games img:hover {
-    transform: scale(1.01);
-}
-
-.featured {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1vw;
-    margin:1%;
-    margin-top: 6vw;
-}
-
-.featured h1 {
-    font-size: 3.5vw;
-    font-weight: 700;
-    margin: 1vw 1vw .4vw 1vw;
-    width: 83.8%;
-    text-align: left;
-    color: #fff;
-}
-
-.featured .column {
+       .featured .column {
     display: flex;
     flex-direction: column;
 }
@@ -284,58 +160,116 @@ nav h1 {
     font-size: 5vw;
     text-shadow: 0 0 100px #2c7ffc;
     }
-       .img {
-         display: inline-block
-       }
      </style>
      <img src="images/RammerCenter.png" alt="Logo" class="center" width="600" height="270">
   <h2>This is Part of the RammerHQ Google Site- Do not Pirate the games please and thank you</h2>
-     <a href="games/bitlife.html" class="btn btn-rounded center">Bitlife</a>
-       <a href="games/Slope.html" class="btn btn-rounded center">Slope</a>
-     <a href="games/basketballio.html" class="btn btn-rounded center">Basketball.io</a>
-     <a href="games/flappybird.html" class="btn btn-rounded center">Flappy Bird</a>
-     <a href="games/fortnite.html" class="btn btn-rounded center">Fortnite[Fake]</a>
-     <a href="games/paperio.html" class="btn btn-rounded center">paperio</a>
-     <a href="games/templeruns.html" class="btn btn-rounded center">temple run 2</a>
-      <a href="games/madalinstun2t.html" class="btn btn-rounded center">Madalin Stunt Cars 2</a>
-     <a href="games/snake.html" class="btn btn-rounded center">Snake</a>
-     <a href="games/Vex3.html" class="btn btn-rounded center">Vex 3</a>
-     <a href="games/vex4.html" class="btn btn-rounded center"> Vex 4</a>
-     <a href="games/Vex5.html" class="btn btn-rounded center"> Vex 5</a>
-     <a href="games/Vex6.html" class="btn btn-rounded center">Vex 6</a>
-     <a href="games/Run3.html" class="btn btn-rounded center">Run 3</a>
-     <a href="games/awsometonks2.html" class="btn btn-rounded center">Awsome Tanks 2</a>
-     <a href="games/basketballssss.html" class="btn btn-rounded center">Basketball Stars</a>
-     <a href="games/evio.html" class="btn btn-rounded center">Ev.IO</a>
-     <a href="games/duck1.html" class="btn btn-rounded center">Duck Life 1</a>
-     <a href="games/duck2.html" class="btn btn-rounded center">Duck Life 2</a>
-     <a href="games/duck3.html" class="btn btn-rounded center">Duck Life 3</a>
-     <a href="games/duck4.html" class="btn btn-rounded center">Duck Life 4</a>
-     <a href="games/arrasio.html" class="btn btn-rounded center">Arras.io</a>
-     <a href="games/fireboyFT.html" class="btn btn-rounded center">Fireboy and Watergirl Forest Temple</a>
-     <a href="games/fireboyLT.html" class="btn btn-rounded center">Firebody and Watergirl Light Temple</a>
-     <a href="games/geforic.html" class="btn btn-rounded center">Geforce Now</a>
-     <a href="games/rooftopbarber.html" class="btn btn-rounded center">Rooftop Snipers</a>
-     <a href="games/discordembed.html" class="btn btn-rounded center">Discord</a>
-     <a href="games/fifa4.html" class="btn btn-rounded center">FIFA 2004</a>
-     <a href="games/fifa5.html" class="btn btn-rounded center">FIFA 2005</a>
-     <a href="games/fifa6.html" class="btn btn-rounded center">FIFA 2006</a>
-     <a href="games/fifa7.html" class="btn btn-rounded center">FIFA 2007</a>
-     <a href="games/rooftopbarber.html" class="btn btn-rounded center">Rooftop Snipers</a>
-     <a href="games/GTAA.html" class="btn btn-rounded center">GTA Advanced</a>
-     <a href="games/007.html" class="btn btn-rounded center">007-Everything Or Nothing</a>
-     <a href="games/advanced.html" class="btn btn-rounded center">Advanced Wars</a>
-     <a href="games/advanced2.html" class="btn btn-rounded center">Advanced Wars 2</a>
-     <a href="games/alien.html" class="btn btn-rounded center">Alien Hominid</a>
-     <a href="games/dkkos.html" class="btn btn-rounded center">Donkey Kong- King of swing</a>
-     <a href="games/dkcountry.html" class="btn btn-rounded center">Donkey Kong Country</a>
-     <a href="games/dkcountry2.html" class="btn btn-rounded center">Donkey Kong Country 2</a>
-     <a href="games/dkcountry3.html" class="btn btn-rounded center">Donkey Kong Country 3</a>
-     <a href="games/doom.html" class="btn btn-rounded center">Doom 2</a>
-     <a href="games/juriiidna.html" class="btn btn-rounded center">Jurassic Period III-The DNA Factor</a>
-     <a href="games/juriiiIA.html" class="btn btn-rounded center">Jurassic Period III-Island Attacked</a>
-     <a href="games/legoI.html" class="btn btn-rounded center">Lego Island 2</a>
-      <a href="chatgbt" class="btn btn-rounded center">ChatGbt</a>
+     <div class="featured">
+       <div class="column">
+          <a href="games/bitlife.html">Bitlife</a>
+        <img src="images/bitlife.png">
+         <div class="play-button">
+        <i class="fa-solid fa-play"></i>
+           </a>
+       </div>
+      <div class="column">
+       <a href="games/Slope.html">
+       <img src="images/slop2.png">
+            <div class="play-button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+         </div>
+       <div class="column">
+           <a href="games/basketballio.html">
+            <img src="images/basketballio.png">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+       <div class="column">
+<a href="games/flappybird.html">
+            <img src="images/Flappy-Bird-PNG-Image.png">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+       <div class="column">
+<a href="games/fortnite.html">
+            <img src="images/Fortnite.png">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+       <div class="column">
+<a href="games/paperio.html">
+            <img src="images/paperio.png">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+  <div class="colunm">
+<a href="games/templeruns.html">
+            <img src="images/Temple_Run_2.png">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+       <div class="column">
+<a href="games/007.html">
+            <img src="images/images (32).jpeg">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+     <div class="column">
+<a href="games/1v1.html">
+            <img src="images/1v1.png">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+       <div class="column">
+<a href="games/Vex3.html">
+            <img src="images/vex3.jpeg">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+       <div class="column">
+<a href="games/vex4.html">
+            <img src="images/vex4.jpeg">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+       <div class="column">
+<a href="games/Vex5.html">
+            <img src="images/vex5.jpeg">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+       <div class="column">
+<a href="games/Run3.html">
+            <img src="images/run3pes.jpeg">
+            <div class="play button">
+                <i class="fa-solid fa-play"></i>
+            </div>
+          </a>
+        </div>
+       </div>
+     </div>
+     </div>
      <footer>
       <h1>This Is Site is Created by RammerHQ</h1>
        <h2>Need Help?</h2>
@@ -349,3 +283,4 @@ nav h1 {
     <script src="index.js"></script>
    </body> 
 </html>
+

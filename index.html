@@ -109,10 +109,6 @@ color: rgba(0, 255, 69, 1);
   color: green;
   opacity: 1;
 }
-       .featured .column {
-    display: flex;
-    flex-direction: column;
-}
 
 .featured img {
     height: 12.5vw;
@@ -129,11 +125,6 @@ color: rgba(0, 255, 69, 1);
     filter: brightness(50%);
 }
 
-
-.featured .row img {
-    height: 26vw;
-    width: 26vw;
-}
 
 .featured a {
     display: inline-block;
@@ -160,12 +151,22 @@ color: rgba(0, 255, 69, 1);
     font-size: 5vw;
     text-shadow: 0 0 100px #2c7ffc;
     }
+       .row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+       .img {
+         border-radius: 5px;
+       }
      </style>
      <img src="images/RammerCenter.png" alt="Logo" class="center" width="600" height="270">
   <h2>This is Part of the RammerHQ Google Site- Do not Pirate the games please and thank you</h2>
-     <div class="featured">
        <div class="row">
-          <a href="games/bitlife.html">Bitlife</a>
+          <a href="games/bitlife.html">
         <img src="images/bitlife.png">
          <div class="play-button">
         <i class="fa-solid fa-play"></i>
